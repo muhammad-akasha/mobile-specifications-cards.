@@ -10,33 +10,6 @@
   font-family: "Roboto Slab", serif;
 }
 
-/* .result-div {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  .result-div img {
-    max-width: 100%;
-    height: auto;
-  }
-  #suggestions {
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
-  .suggestion {
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .suggestion:hover {
-    background-color: #ddd;
-  } */
 .navbar {
   background: #0f0051 !important;
   color: #fbfcfa;
@@ -142,6 +115,10 @@ option {
   opacity: 1;
   color: #0f0051;
   cursor: pointer;
+  font-size: 22px
+}
+.result-div:hover{
+  opacity: 0.8;
 }
 .result-div img {
   margin-bottom: 20px;
@@ -193,4 +170,20 @@ option {
   position: absolute;
   right: 30px;
   border: navajowhite;
+}
+
+footer{
+  background: #0f0051;
+  color: #f3f3f3;width: 100%;
+  padding: 20px;
+  text-align: center
+}
+footer i {
+  font-size: 22px;
+  padding-left: 15px;
+  cursor: pointer;
+  color: #275a89
+}
+.foot-design{
+  margin-top: 14px
 }
