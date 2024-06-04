@@ -165,6 +165,7 @@ option {
   border-radius: 50px;
   background: #f3f3f3;
   padding: 30px;
+  position: relative;
 }
 .modal-div > h2{
   text-align: center
@@ -186,4 +187,10 @@ option {
 }
 .modal-specs{
   padding: 0 20px;
+}
+
+.modal-div button {
+  position: absolute;
+  right: 30px;
+  border: navajowhite;
 }

@@ -515,8 +515,7 @@ function modal() {
   createDiv = document.createElement("div");
   let mobileSpec = mobileObj[brand].models[selectedModel];
   let showModal = `
-  <div class="modal-div"> <h2> ${brand} </h2>
-  <button onclick="hideModal()"> click me </button>
+  <div class="modal-div"> <h2> ${brand}<button onclick="hideModal()"><i class="fa-solid fa-xmark"></i></button> </h2>
   <div class="modal result-div">
   <div>
   <img src="${mobileSpec["src"]}">
