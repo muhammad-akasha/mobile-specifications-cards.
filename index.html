@@ -15,6 +15,10 @@
       src="https://kit.fontawesome.com/005ad9d070.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -50,27 +54,36 @@
             <select name="allmodels" id="allmodels">
               <option value="">Select Model</option>
             </select>
-            <button id="search" onclick="showResult(),modal()" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <button id="search" onclick="showResult()" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          
-          <div class="cart">
-            <h3>Cart<i class="fa-brands fa-opencart"></i></h3> 
+          <button disabled class="cart-count" onclick="showCart()">
+            <div class="cart">
+              <h3>Cart <i class="fa-brands fa-opencart"></i></h3>
+              <div class="add-to-cart">0</div>
+            </div>
+          </button>
           </div>
         </div>
       </div>
-    </div>
     </nav>
-    <div id="result">
+    <h1 class="text-center mt-5">Welcome To The Mobile Shop</h1>
+    <div id="result"></div>
+    <div id="modal-show"></div>
+    <div class="cart-parent">
+      <i onclick="hideCart()" class="fa-solid fa-xmark cross-sign"></i>
+      <div class="cart-box"></div>
     </div>
-
+  </div>
     <footer>
-      <div><i class="fa-solid fa fa-facebook"></i>
+      <div>
+        <i class="fa-solid fa fa-facebook"></i>
         <i class="fa-solid fa fa-twitter"></i>
         <i class="fa-solid fa fa-youtube"></i>
-        <i class="fa-solid fa fa-instagram"></i></div>
-        <div class="foot-design"><h4> Design By Muhammad Akasha </h4></div>
-      </footer>
+        <i class="fa-solid fa fa-instagram"></i>
+      </div>
+      <div class="foot-design"><h4>Design By Muhammad Akasha</h4></div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -81,6 +94,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
